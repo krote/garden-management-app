@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module_exports = {
+module.exports = {
     content: [
         './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
         './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -9,7 +9,7 @@ module_exports = {
         extend: {
             colors: {
                 'garden': {
-                    50: '#fofdf4',
+                    50: '#f0fdf4',
                     500: '#22c55e',
                     600: '#16a34a',
                     700: '#15803d',
