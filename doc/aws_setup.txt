@@ -1,0 +1,5 @@
+aws cognito-idp create-user-pool --cli-input-json file://cognito-user-pool.json
+
+aws cognito-idp list-user-pools --max-results 10
+
+aws cognito-idp create-user-pool-client --user-pool-id $USER_POOL_ID --client-name "GardenAppWebClient" --explicit-auth-flow "ADMIN_NO_SRP_AUTH" "USER_PASSWORD_AUTH"
