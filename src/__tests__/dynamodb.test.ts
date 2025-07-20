@@ -3,7 +3,7 @@ import { describe } from 'node:test';
 
 describe('DynamoDB Connection', () => {
     test('can connect to DynamoDB', async () => {
-        const client = new DynamoDBClient({ region: 'ap-northeast-1 '});
+        const client = new DynamoDBClient({ region: 'ap-northeast-1'});
 
         try{
             const command = new ListTablesCommand({});

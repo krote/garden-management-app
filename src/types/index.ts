@@ -1,3 +1,5 @@
+import { Interface } from "readline";
+
 // ユーザ
 export interface User {
     userId: string;
@@ -16,6 +18,23 @@ export interface User {
     };
     createdAt: string;
     updatedAt: string;
+}
+
+export interface AuthUser {
+  username: string;
+  email: string;
+  nickname?: string;
+}
+
+export interface SignUpForm {
+  email: string;
+  password: string;
+  nickname: string;
+}
+
+export interface SignInForm {
+  email: string;
+  password: string;
 }
 
 // 区画
