@@ -11,6 +11,12 @@ if( typeof window != 'undefined'){
     });
 }
 
+export interface AuthUser {
+    username: string;
+    email: string;
+    nickname?: string;
+}
+
 export const authService = {
     async singUp(email: string, password: string, nickname: string){
         try{
