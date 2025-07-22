@@ -18,7 +18,7 @@ export interface AuthUser {
 }
 
 export const authService = {
-    async singUp(email: string, password: string, nickname: string){
+    async signUp(email: string, password: string, nickname: string){
         try{
             const result = await Auth.signUp({
                 username: email,
