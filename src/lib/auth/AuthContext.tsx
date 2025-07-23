@@ -15,7 +15,7 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-export const userAuth = () => {
+export const useAuth = () => {
     const context = useContext(AuthContext);
     if(context == undefined){
         throw new Error('useAuth must be used wihtin an AuthProvider');
