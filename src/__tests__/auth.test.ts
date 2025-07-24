@@ -22,7 +22,7 @@ describe('Auth Service', () => {
             user: { username: 'test@exampl.com'}
         });
 
-        const result = await authService.singUp(
+        const result = await authService.signUp(
             'test@example.com',
             'TestPassword123',
             'テストユーザー'

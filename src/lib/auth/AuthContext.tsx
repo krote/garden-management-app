@@ -42,7 +42,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         }
     };
 
-    const signin = async (email: string, password: string) => {
+    const signIn = async (email: string, password: string) => {
         const result = await authService.signIn(email, password);
         if(result.success){
             const user = await authService.getCurrentUser();
